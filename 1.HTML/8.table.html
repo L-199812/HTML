@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  表格里面只能放行标签，行标签里面只能放列标签-->
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+    <!-- 快捷键：table>tr*2>td*3就可以生成二行三列的表格 -->
+    <!-- 表格table属性 -->
+    <!-- 外边框线宽度border    宽度width  高度，但是高度是内容撑起来的
+        align：停靠的水平对齐位置 bordercolor边框颜色  bgcolor：背景颜色
+        cellspaceing:单元格之间的缝隙
+        cellpadding:单元格与内容之间的间距
+    -->
+    <table border="1" width="50%" height="200px" align="center" bordercolor="red" bgcolor="yellow" cellspacing="0"
+    cellpadding="10">
+    <!-- 表格tr的属性 -->
+    <!-- valign是垂直方向的对齐位置 -->
+        <tr bgcolor="green" height="50" align="center" valign="middle">
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <!-- td  table data的属性同tr，只是宽度和高度是会影响整列和行的-->
+            <!-- 停靠位置是内容的位置可以水平和垂直搭配 -->
+            <td width="200" bgcolor="red" align="right" valign="top" colspan="2">21</td>
+            <td>22</td>
+            <td>23</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+<!-- 表格的合并 -->
+<!-- 行合并rowspan、列合并colspan -->
