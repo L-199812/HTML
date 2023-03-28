@@ -1,0 +1,23 @@
+<!-- 内部样式有一个缺陷，就是每次要在html文件里面把代码翻回来才可以更改 -->
+<!-- 外部样式就是外面单独一个.css文件 用来管理样式-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 方式1：链接到.css文件 -->
+    <!-- <link rel="stylesheet" href="2.外部样式.css"> -->
+
+    <!-- 方式2 -->
+    <style>
+        /* css提供的一种方式 ，是等html运行完了再加载，所以效果不是很好，最好用link方法*/
+        @import url(2.外部样式.css);
+    </style>
+</head>
+<body>
+    <h1>111111</h1>
+    <h2>222222</h2>
+</body>
+</html>

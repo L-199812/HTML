@@ -1,0 +1,28 @@
+<!-- 希望对一种标签的某几个标签进行更改样式 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 类名.开头就行 */
+        .ibm{
+            background-color: blue;
+        }
+        .chongyou{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="ibm">11111</div>
+    <div>11111</div>
+    <div>11111</div>
+    <!-- 就近原则就的是类的声明 -->
+    <div class="ibm chongyou">11111</div>
+    <div>11111</div>
+    <div>11111</div>
+</body>
+</html>
