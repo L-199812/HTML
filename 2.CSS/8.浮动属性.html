@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+        }
+        .red{
+            background: red;
+            /* 浮动属性 */
+            float: left;
+        }
+        .green{
+            background: green;
+            width: 300px;
+            height: 300px;
+        }
+        .blue{
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="red"></div>
+    <div class="green"></div>
+    <div class="blue"></div>
+</body>
+</html>
+<!-- 浮动会影响后面的布局，因为浮动的高度是零 -->
+<!-- 如下想要前面两个浮动，第三个在浮动下面开始布局，那有两种方案 -->
+<!-- 1.写死高度 -->
+<!-- 2.轻浮动，加给后面的兄弟 -->
+<!-- 3.浮动后面加一个空盒子 -->
+<!--  4.overflow:hidden让浮动元素参与高度布局-->
